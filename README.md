@@ -1,3 +1,3 @@
-# dbcompare
+# kdb
 
-Compare and report on every value between two kdb+ tables  
+Repository containing various kdb+/q scripts
