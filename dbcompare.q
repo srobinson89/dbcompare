@@ -49,7 +49,7 @@ run:{[t1;t2]
   mismatchedCols:where 0<diffd1;
   indicies:diffd0 where 0<diffd1;
   nvalues:count[t1]*count[cols[t1]]; /total number of values in table
-  percentageMatch:100*(nvalues-count[indicies])%nvalues;
+  percentageMatch:100*(nvalues-count[raze indicies])%nvalues;
   -1"[INFO] Percentage match, after record exclusion is: ",string[percentageMatch],"%";
  
   /select col c from t1 & t2, and i in ids
